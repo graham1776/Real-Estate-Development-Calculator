@@ -1,45 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f5f5f5;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .container {
-  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  font-family: 'Poppins', Arial, sans-serif;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .output-and-canvas-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
-.output-container {
-  flex: 1;
-  min-width: 300px;
+.output-container,
+.canvas-container,
+.chart-container {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.canvas-container {
-  flex: 1;
-  min-width: 500px;
-}
-
-
-h1 {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-input {
-  width: 100%;
+.metric {
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
-label {
+.canvas-container canvas,
+.chart-container canvas {
   display: block;
-  margin-bottom: 5px;
-}
-
-#output {
-  margin-top: 20px;
+  margin: 0 auto;
 }
