@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Web App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Back of Envelope Real Estate App</h1>
+      <div class="output-and-canvas-container">
+        <div class="output-container">
+          <div id="output">
+            <p id="far">FAR: 0%</p>
+            <p id="totalProjectCost">Total Project Cost: $0</p>
+            <p id="endValue">End Value: $0</p>
+            <p id="rentPerAnnum">Rent per annum: $0</p>
+            <p id="yieldOnCost">Yield on Cost: 0%</p>
+            <p id="returnOnCost">Return on Cost: 0%</p>
+          </div>
+        </div>
+        <div class="canvas-container">
+          <canvas id="farCanvas" width="400" height="240"></canvas>
+        </div>
+      </div>
+
+
+      <form id="inputForm">
+        <label for="landAc">Land Acres:</label>
+        <input type="number" id="landAc" name="landSqft" value="20.0">
+        <br>
+        <label for="buildingSqft">Building Square Footage:</label>
+        <input type="number" id="buildingSqft" name="buildingSqft" value="500000">
+        <br>
+        <label for="landCost">Land ($/psft/land):</label>
+        <input type="number" id="landCost" name="landCost" value="170">
+        <br>
+        <label for="predevelopment">Predevelopment ($/psft):</label>
+        <input type="number" id="predevelopment" name="predevelopment" value="15">
+        <br>
+        <label for="infrastructure">Infrastructure ($/psft):</label>
+        <input type="number" id="infrastructure" name="infrastructure" value="10">
+        <br>
+        <label for="verticalCosts">Vertical costs ($/psft):</label>
+        <input type="number" id="verticalCosts" name="verticalCosts" value="170">
+        <br>
+        <label for="leasingCosts">Leasing costs ($/psft):</label>
+        <input type="number" id="leasingCosts" name="leasingCosts" value="25">
+        <br>
+        <label for="rent">Rent per sqft per month ($):</label>
+        <input type="number" id="rent" name="rent" value="2.25">
+        <br>
+        <label for="capRate">Cap rate (%):</label>
+        <input type="number" id="capRate" name="capRate" value="4.50">
+      </form>
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+</html>
